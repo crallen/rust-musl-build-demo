@@ -12,7 +12,7 @@ $(TARGET): $(SOURCES) docker-build
 
 .PHONY: docker-build
 docker-build:
-	DOCKER_BUILDKIT=1 docker build -t rust-musl-build-demo .
+	docker build -t rust-musl-build-demo .
 
 .PHONY: clean
 clean:
